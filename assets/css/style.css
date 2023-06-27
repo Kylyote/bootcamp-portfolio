@@ -13,11 +13,12 @@
 header,
 h1,
 h2,
+h3,
 nav {
   padding: 5px;
-  line-height: 50 px;
+  line-height: 5px;
   background-color: lightgray;
-  color: yellow;
+  color: navy;
 }
 
 nav {
@@ -34,7 +35,7 @@ main {
     flex-direction: row;
   flex-flow: row wrap;
 }
-
+/* display: flex needs to be in each container that will have flex items in it. So, when nesting boxes, display will need to be called multiple times */
 .child-container{
     display:flex;
 }
