@@ -7,7 +7,7 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  margin 0;
+  margin: 5px;
 }
 
 header,
@@ -32,33 +32,34 @@ nav a {
   padding: 10px;
 }
 main {
-    flex-direction: row;
+  flex-direction: row;
   flex-flow: row wrap;
 }
 /* display: flex needs to be in each container that will have flex items in it. So, when nesting boxes, display will need to be called multiple times */
-.child-container{
-    display:flex;
+.child-container {
+  display: flex;
 }
 
 .left-aside {
-    flex:2;
-    display:flex;
-    align-items: flex-start;
-    flex-direction: column;
+  flex: 2;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .dev-box {
-    flex: 1;
+  flex: 1;
   background-color: red;
   padding: 10px;
 }
 
-.about{
-    flex: 1;
-    font-size: 20px;
+.about {
+  flex: 1;
+  font-size: 20px;
 }
+/* Using ugly background colors to see where the boxes are being drawn */
 .cards {
-    flex: 5;
+  flex: 5;
   align-items: flex-start;
   background-color: brown;
   padding: 10px;
@@ -70,21 +71,20 @@ main {
   width: 20%;
 }
 
-.card { 
-    background-color: darkblue;
-    flex 1 0 400px;
+.card {
+  background-color: darkblue;
+  flex: 1 0 400px;
 }
 
 .card img {
-    width: 100%;
-    min-width: 400px;
+  width: 100%;
+  min-width: 400px;
 }
 
 img {
   max-height: 100%;
   max-width: 100%;
   object-fit: contain;
-  object-fill: cover;
   vertical-align: bottom;
 }
 
@@ -101,8 +101,6 @@ img {
   border-radius: 20px;
   margin: 10px;
 } */
-
-
 
 footer {
   padding: 40px;
